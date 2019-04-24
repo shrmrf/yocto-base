@@ -8,4 +8,4 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y gawk wget git-cor
 RUN locale-gen --purge en_US.UTF-8
 RUN echo -e 'LANG="en_US.UTF-8"\nLANGUAGE="en_US:en"\n' > /etc/default/locale
 
-ENTRYPOINT ["bash"]
+CMD ["/bin/bash"]
