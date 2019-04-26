@@ -1,0 +1,2 @@
+script:
+  - curl -X POST $BUILD_TRIGGER_URI
