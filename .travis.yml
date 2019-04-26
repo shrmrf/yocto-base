@@ -1,2 +1,6 @@
+services:
+  - docker
+  
 script:
   - curl -X POST $BUILD_TRIGGER_URI
+  - docker build --no-cache .
