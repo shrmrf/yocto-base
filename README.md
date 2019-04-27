@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shrmrf/yocto-base.svg?branch=master)](https://travis-ci.org/shrmrf/yocto-base)
+[![Build Status](https://travis-ci.com/shrmrf/yocto-base.svg?branch=master)](https://travis-ci.com/shrmrf/yocto-base)
 [![Docker Repository on Quay](https://quay.io/repository/shrmrf/yocto-base/status "Docker Repository on Quay")](https://quay.io/repository/shrmrf/yocto-base)
 
 # yocto-base
