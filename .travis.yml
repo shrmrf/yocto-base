@@ -1,6 +1,9 @@
 services:
   - docker
-  
+
+env:
+  - REPO_NAME=shrmrf/yocto-base
 script:
-  - curl -X POST $BUILD_TRIGGER_URI
-  - docker build --no-cache .
+  - docker build --no-cache -t $REPO_NAME:$TRAVIS_BRANCH .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push $REPO_NAME:$TRAVIS_BRANCH
